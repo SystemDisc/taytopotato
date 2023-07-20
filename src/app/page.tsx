@@ -11,8 +11,8 @@ export default function Home() {
     const divElem = document.createElement('div');
     divElem.classList.add('magic');
     divElem.style.position = 'absolute';
-    divElem.style.top = `${e.clientY - 50}px`;
-    divElem.style.left = `${e.clientX - 50}px`
+    divElem.style.top = `${e.pageY - 50}px`;
+    divElem.style.left = `${e.pageX - 50}px`
     mainRef.current?.appendChild(divElem);
     setTimeout(() => {
       mainRef.current?.removeChild(divElem);
