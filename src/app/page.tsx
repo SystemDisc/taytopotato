@@ -20,7 +20,7 @@ export default function Home() {
   }
 
   return (
-    <main ref={mainRef} className='flex items-center justify-center bg-[url("/potatoes.jpg")] bg-cover bg-center bg-fixed overflow-hidden min-h-screen' onClick={animate}>
+    <main ref={mainRef} className='flex items-center justify-center bg-[url("/potatoes.jpg")] bg-cover bg-center bg-fixed overflow-hidden min-h-screen w-screen relative' onClick={animate}>
       <Image className='w-full h-auto' src='/taytopotato.png' width={1400} height={2000} alt='Tayto Potato' />
     </main>
   )
